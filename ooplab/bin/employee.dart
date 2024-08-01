@@ -1,24 +1,9 @@
 import 'dart:io';
 
 class Employee {
-  int? id;
-  String? name;
-  String? email;
-  String? position;
+  List employees = [];
 
-  Employee(
-      {required this.id,
-      required this.name,
-      required this.email,
-      required this.position});
-
-  displayinfo() {
-    print("------  Employee information ------");
-    print("------  Id: $id");
-    print("------  Name: $name");
-    print("------  Email: $email");
-    print("------  Position: $position");
-  }
+  Employee();
 
   addEmployee() {
     print("Add employee ID");
@@ -29,17 +14,28 @@ class Employee {
     String employeeEmail = stdin.readLineSync()!;
     print("Add employee poisiton");
     String employeePosition = stdin.readLineSync()!;
-    List employees = [];
+
     Map<String, dynamic> employeeMap = {
       "id": id,
-      "name_task": name,
-      "completion": employeeEmail,
-      "date": employeePosition,
+      "Name": name,
+      "Email": employeeEmail,
+      "position": employeePosition,
     };
 
     employees.add(employeeMap);
     print("Employee added successfully");
     print(employees);
     stdin.readLineSync();
+  }
+
+  displayinfo() {
+    for (var element in employees) {
+      print("-----ID task ${element["id"]}");
+      print("Name: ${element["Name"]}");
+      print("Completion: ${element["Email"]}");
+      print("Date Add: ${element["position"]}");
+      print("-------------------------------");
+      print('\n');
+    }
   }
 }
