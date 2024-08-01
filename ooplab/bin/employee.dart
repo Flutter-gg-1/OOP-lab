@@ -24,16 +24,16 @@ class Employee {
 
     employees.add(employeeMap);
     print("Employee added successfully");
-    print(employees);
+
     stdin.readLineSync();
   }
 
   displayinfo() {
     for (var element in employees) {
-      print("-----ID task ${element["id"]}");
+      print("-----ID: ${element["id"]}");
       print("Name: ${element["Name"]}");
       print("Completion: ${element["Email"]}");
-      print("Date Add: ${element["position"]}");
+      print("Position: ${element["position"]}");
       print("-------------------------------");
       print('\n');
     }
