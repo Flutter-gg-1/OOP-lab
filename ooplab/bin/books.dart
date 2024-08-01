@@ -1,12 +1,12 @@
 import 'dart:io';
 import 'ooplab.dart';
+import 'lists.dart';
 class Books{
   //attributes
   String? bookId;
   String? booktitle;
   String? auther;
   String? type;
-List<Map<String, dynamic>> booksListMap = [{}];
   //Constructors
   Books({this.bookId, this.booktitle, this.auther, this.type}){
   }
@@ -30,19 +30,26 @@ List<Map<String, dynamic>> booksListMap = [{}];
   }
 
     void displayBook() {
+    print("                   All books      ");
     for (var element in booksListMap) {
-      print("                   All books      ");
       print(" book id is ${element["id"]}");
       print(" Title is ${element["name"]}");
       print(" auther is ${element["auther"]}");
       print(" type is ${element["type"]}");
-      main();
+      
 
     }
-    stdin.readLineSync(); 
+    stdin.readLineSync();
+     main();
   }
 
-    void deleteBook(){
-      //delete book
+    void deleteBook(String id){
+    for (var element in booksListMap) {
+      if (element["id"] == id) {
+        booksListMap.remove(element);
   }
+    }
+        print("* book deleted successfully *");
+    main();
+    }
 }

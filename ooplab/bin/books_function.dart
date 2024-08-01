@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:math';
 import 'books.dart';
 import 'ooplab.dart';
-import 'lists.dart';
+
 
 books(){
 
@@ -24,8 +24,11 @@ books(){
               case '2':
               Books book = Books();
               book.displayBook();
-              case '3':
-              
+              case '3': 
+            print("Enter book ID");
+              String? bookid = stdin.readLineSync();  
+              Books book = Books();
+              book.deleteBook(bookid!);
               default:
             print("Please try again");
             bookOption = stdin.readLineSync();   }
