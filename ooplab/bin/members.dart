@@ -29,14 +29,4 @@ class Member {
       print(element.values);
     }
    }
-   // function to remove member
-   removeMember(){
-    print("Enter id: ");
-    int id = int.parse(stdin.readLineSync()!);
-    for (var element in memberlist) {
-      if(element["id"] == id){
-        memberlist.remove(id);
-      }
-    }
-   }
 }
