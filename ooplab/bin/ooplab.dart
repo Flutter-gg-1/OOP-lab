@@ -1,3 +1,4 @@
+
 import 'dart:io';
 import 'books_function.dart';
 import 'events_function.dart';
@@ -17,7 +18,7 @@ void main() {
         events();
         case '4':
         //do somthing
-        case 'e':
+        case '5':
         default:
       print("Please try again");
       choice = stdin.readLineSync();   }
