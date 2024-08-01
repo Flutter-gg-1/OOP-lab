@@ -1,5 +1,8 @@
-import 'package:ooplab/ooplab.dart' as ooplab;
+import 'employee.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${ooplab.calculate()}!');
+  Employee emp1 = Employee(
+      id: 1, name: "rahaf", email: "Rahaf@email.com", position: "manager");
+
+  emp1.addEmployee();
 }
