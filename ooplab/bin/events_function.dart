@@ -2,18 +2,15 @@ import 'dart:io';
 import 'dart:math';
 import 'books.dart';
 import 'ooplab.dart';
-import 'lists.dart';
-
-books(){
-
-            print("Choose option \n 1-Add a book \n 2-display all books \n 3-Delete a book 4-b to go back");
-          String? bookOption = stdin.readLineSync(); 
-          while(bookOption != 'b'){
-              switch (bookOption){
+events(){
+            print("Choose option \n 1-Add an event \n 2-display all current event \n 3-Delete an event 4-b to go back");
+          String? Option = stdin.readLineSync(); 
+          while(Option != 'b'){
+              switch (Option){
               case '1':
               Random random = Random();
               String bookId =random.nextInt(10000).toString(); 
-              print("Enter book title");
+              print("Enter event name");
               String? booktitle = stdin.readLineSync(); 
               print("Enter book auther");
               String? auther = stdin.readLineSync(); 
@@ -22,13 +19,12 @@ books(){
               Books book = Books(bookId: bookId, booktitle: booktitle, auther: auther, type: type);
               book.addBook();
               case '2':
-              Books book = Books();
-              book.displayBook();
+              //do somthing
               case '3':
-              
+              //do somthing
               default:
             print("Please try again");
-            bookOption = stdin.readLineSync();   }
+            Option = stdin.readLineSync();   }
           }
           main();
 

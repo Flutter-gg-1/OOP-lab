@@ -1,6 +1,8 @@
 
 import 'dart:io';
 import 'books_function.dart';
+import 'events_function.dart';
+
 void main() {
   print("--------Welcome Admin--------");
   print("What do you want to do?");
@@ -13,7 +15,7 @@ void main() {
         case '2':
         //do somthing
         case '3':
-        //do somthing
+        events();
         case '4':
         //do somthing
         case 'e':
