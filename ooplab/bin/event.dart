@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import 'employee.dart';
-
-void main(List<String> arguments) {
-  Employee emp1 = Employee();
-
-  emp1.addEmployee();
-=======
 import 'dart:io';
 import 'dart:math';
 
@@ -74,5 +66,4 @@ class Events {
     }
     stdin.readLineSync(); //for new line after display
   }
->>>>>>> origin/yara-albouq
 }
