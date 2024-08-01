@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'ooplab.dart';
 class Employee {
   List employees = [];
 
@@ -25,6 +25,7 @@ class Employee {
     print("Employee added successfully");
 
     stdin.readLineSync();
+    main();
   }
 
   displayinfo() {
@@ -36,5 +37,6 @@ class Employee {
       print("-------------------------------");
       print('\n');
     }
+    main();
   }
 }

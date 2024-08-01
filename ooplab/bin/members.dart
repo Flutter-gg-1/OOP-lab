@@ -1,6 +1,7 @@
 
 import 'dart:io';
 import 'dart:math';
+import 'ooplab.dart';
 
 class Member {
 
@@ -22,11 +23,14 @@ class Member {
       "startDate": startDate,
     };
     memberlist.add(members);
+    main();
   }
    // function to dispaly member
    displaymember(){
     for (var element in memberlist) {
       print(element.values);
     }
+    main();
    }
+   
 }

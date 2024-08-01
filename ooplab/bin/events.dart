@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'ooplab.dart';
 
 List<Map<String, dynamic>> enventListMap = [{}];
 
@@ -34,6 +35,7 @@ class Events {
     print("your ID is  $id ");
 
     stdin.readLineSync(); //for new line after display
+    main();
   }
 
   //this function will display all event
@@ -46,6 +48,7 @@ class Events {
       print(" Date of event is ${element["date"]}");
     }
     stdin.readLineSync(); //for new line after display
+    main();
   }
 
 //this function will remove event by event id
@@ -60,5 +63,6 @@ class Events {
     //to ensure the number enterd founds
     enventListMap.remove(event); // this function remove id
     stdin.readLineSync(); //for new line after display
+    main();
   }
 }
