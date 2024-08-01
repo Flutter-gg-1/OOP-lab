@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import 'employee.dart';
+>>>>>>> rahaf
 
 import 'members.dart';
 void main(List<String> arguments) {
+<<<<<<< HEAD
   Member member1 = Member();
   member1.addMember();
   member1.displaymember();
@@ -77,4 +82,9 @@ class Events {
     stdin.readLineSync(); //for new line after display
   }
 >>>>>>> yara-albouq
+=======
+  Employee emp1 = Employee();
+
+  emp1.addEmployee();
+>>>>>>> rahaf
 }
