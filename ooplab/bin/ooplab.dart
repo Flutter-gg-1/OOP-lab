@@ -1,7 +1,7 @@
 
 import 'dart:io';
-
-void main(List<String> arguments) {
+import 'books_function.dart';
+void main() {
   print("--------Welcome Admin--------");
   print("What do you want to do?");
   print("1-Edit books \n 2-Edit empolyees \n 3-Edit members \n 4-Edit events");
@@ -9,8 +9,7 @@ void main(List<String> arguments) {
   while(choice != 'e'){
       switch (choice){
         case '1':
-        print('somthing');
-        choice ='e';
+        books();
         case '2':
         //do somthing
         case '3':
