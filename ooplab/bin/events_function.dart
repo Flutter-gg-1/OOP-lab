@@ -1,9 +1,9 @@
 import 'dart:io';
 import 'dart:math';
-import 'event.dart';
 import 'ooplab.dart';
+import 'events.dart';
 events(){
-            print("Choose option \n 1-Add an event \n 2-display all current event \n 3-Delete an event 4-b to go back");
+            print("Choose option \n 1-Add an event \n 2-display all current event \n 3-Delete an event");
           String? eventOption = stdin.readLineSync(); 
           while(eventOption != 'b'){
               switch (eventOption){
@@ -20,6 +20,7 @@ events(){
               event.addEvent();
               case '2':
               Events event =Events();
+              event.displayEvent();
               case '3':
               print("Enter event ID");
               String eventId = stdin.readLineSync()!;  
